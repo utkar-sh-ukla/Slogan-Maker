@@ -1,0 +1,19 @@
+.header__container {
+  position: fixed;
+  width: 100%;
+  background-color: var(--clr-primary);
+  z-index: 2;
+}
+
+.header__wrapper {
+  padding: 20px 160px 20px 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__items {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}

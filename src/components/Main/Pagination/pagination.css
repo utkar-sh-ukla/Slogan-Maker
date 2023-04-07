@@ -1,0 +1,13 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dots {
+  cursor: pointer;
+  color: var(--clr-primary);
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+}

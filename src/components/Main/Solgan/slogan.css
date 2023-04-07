@@ -1,0 +1,37 @@
+.slogan {
+  font-size: 16px;
+  font-family: galanogrotesque regular;
+  color: var(--clr-heading);
+}
+
+.slogan__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 100%;
+}
+
+.slogan__wrapper {
+  position: relative;
+  width: 47%;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  line-height: 24px;
+  background-color: var(--clr-white-200);
+  display: flex;
+  align-items: center;
+}
+
+.caption {
+  display: inline-block;
+  position: absolute;
+  right: 104%;
+  font-family: galanogrotesque regular;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--clr-white-300);
+  background-color: var(--clr-grey-200);
+  white-space: nowrap;
+}
