@@ -20,11 +20,11 @@ export const Main = () => {
     setInput(e.target.value);
   };
 
-  const generateSolgon = () => {
+  const generateSlogon = () => {
     setFinalInput(input);
   };
 
-  const filterSolgon = slogans.filter(
+  const filterSlogon = slogans.filter(
     (element) => element.sloganKey === finalInput
   );
 
@@ -32,8 +32,8 @@ export const Main = () => {
   const pageNumberLimit = 3;
   const indexOfLastPost = currentPage * postPerPage;
   const indexOfFirstPost = indexOfLastPost - postPerPage;
-  const currentPosts = filterSolgon.slice(indexOfFirstPost, indexOfLastPost);
-  const totalPage = Math.ceil(filterSolgon.length / postPerPage) + 1;
+  const currentPosts = filterSlogon.slice(indexOfFirstPost, indexOfLastPost);
+  const totalPage = Math.ceil(filterSlogon.length / postPerPage) + 1;
 
   const pagination = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -92,7 +92,7 @@ export const Main = () => {
                 )}
               </div>
             </div>
-            <button className="btn btn--primary mb-48" onClick={generateSolgon}>
+            <button className="btn btn--primary mb-48" onClick={generateSlogon}>
               <span>Generate slogans</span>
             </button>
 
@@ -100,7 +100,7 @@ export const Main = () => {
 
             <div className="flex items-center justify-between mb-32">
               <p className="slogans__result__heading ">
-                We have generated {filterSolgon.length} slogans for "
+                We have generated {filterSlogon.length} slogans for "
                 {finalInput}"
               </p>
               <button className="btn btn--outline">Download all</button>
@@ -112,7 +112,7 @@ export const Main = () => {
 
             <Pagination
               pagination={pagination}
-              slogan={filterSolgon}
+              slogan={filterSlogon}
               postPerPage={postPerPage}
               currentPage={currentPage}
               nextPage={nextPage}
