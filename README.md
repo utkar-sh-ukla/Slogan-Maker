@@ -1,6 +1,6 @@
-# Dukaan Frontend Assignment
+# Slogan Maker
 
-This repository contains the frontend assignment for Dukaan.
+Discover and create compelling slogans effortlessly with this website.
 
 ##  Setup
 
